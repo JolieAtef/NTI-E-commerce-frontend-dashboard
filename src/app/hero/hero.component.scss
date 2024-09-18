@@ -1,0 +1,19 @@
+$image-path: '/images/hero-img.jpg';
+.Parent{
+    padding: 0;
+}
+
+.hero{
+   
+    height: 90vh;
+    background-image: url(#{$image-path});
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    font-size: 3em;
+    text-align: right;
+    padding-top: 17%;
+    padding-right: 15%;
+}

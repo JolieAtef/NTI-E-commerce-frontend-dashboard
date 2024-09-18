@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.Parent{
+    background-color:rgba(238, 233, 219, 0.753); 
+    padding-bottom: 30px;
+    padding-top: 110px;
+}
+
+.button{
+    background-color: rgba(66, 3, 3, 0.938);
+    border-color:rgba(66, 3, 3, 0.938) ;
+    color:rgba(238, 233, 219, 0.753);
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+.button:hover{
+    background-color:rgba(238, 233, 219, 0.753); 
+    color:rgb(66, 3, 3);
+
+}
+.page-link{
+    color:rgba(66, 3, 3, 0.938);
+}

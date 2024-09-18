@@ -1,4 +1,4 @@
-<br><br><br>
+<div class="Parent">
 <div class="w-50 mt-5 m-auto shadow p-4">
   <h1 class="text-center">Update Coupon</h1>
   <form [formGroup]="couponForm" (ngSubmit)="updateCoupon(coupon?._id,couponForm)">
@@ -34,9 +34,10 @@
       }
     </div>
     <div class="mt-3">
-      <button [disabled]="couponForm.invalid" class="btn btn-primary mx-3 ">update</button>
-      <a routerLink="/categories" class="btn btn-danger">Cancel</a>
+      <button [disabled]="couponForm.invalid" class="btn button mx-3 ">update</button>
+      <a routerLink="/categories" class="btn button">Cancel</a>
     </div>
   </form>
 </div>
 <br><br><br>
+</div>

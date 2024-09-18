@@ -12,7 +12,7 @@ export class AuthService {
   private HostName: string = '';
   private routeName: string = '';
   currentUser = new BehaviorSubject(null);
-  loginPhoto: string = 'images/phone.svg';
+  loginPhoto: string = 'images/welcome.jpg';
 
   constructor(private _HttpClient: HttpClient, private _GlobalService: GlobalService, private _Router: Router) {
     this.HostName = this._GlobalService.HostName;

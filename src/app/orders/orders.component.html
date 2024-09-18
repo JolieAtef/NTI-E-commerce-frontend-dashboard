@@ -1,3 +1,4 @@
+<div class="Parent">
 <div class="p-3 m-auto">
     <h2 class="text-center my-5">All Orders</h2>
     <hr class="my-3">
@@ -31,7 +32,7 @@
           <td>{{order?.user?.name}}</td>
           <td>
             @for(item of order.cartItems; track item._id){
-            <img class="mx-3" width="50px" [src]="productsImage+item?.product?.cover"
+            <img class="mx-3" width="50px" [src]="item?.product?.cover"
               [alt]="item?.product?.name">{{item?.product?.name}}
             <br><br>
             }
@@ -45,9 +46,9 @@
           <td>{{order?.totalPrice|currency}}</td>
           <td>
             <button [disabled]="order.isDelivered" (click)="updateDelivered(order._id)"
-              class="btn btn-primary mx-3 btn-sm rounded-3">Deliver
+              class="btn button mx-3 btn-sm rounded-3">Deliver
               Order</button>
-            <button [disabled]="order.isPaid" (click)="updatePaid(order._id)" class="btn btn-primary btn-sm rounded-3">Pay
+            <button [disabled]="order.isPaid" (click)="updatePaid(order._id)" class="btn button btn-sm rounded-3">Pay
               Order</button>
           </td>
         </tr>
@@ -71,3 +72,4 @@
           class="page-link">Next</button></li>}
     </ul>
   </div>
+</div>

@@ -1,0 +1,28 @@
+.img-cover{
+    margin: 0 1rem 1rem  1rem;
+}
+.img-cover img{
+     border-radius: 10px;
+}
+
+button{
+    background-color: rgba(66, 3, 3, 0.938);
+    border-color:rgba(66, 3, 3, 0.938) ;
+    color:rgba(238, 233, 219, 0.753);
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+button:hover{
+    background-color:rgba(238, 233, 219, 0.753); 
+    color:rgb(66, 3, 3);
+
+}
+a{     
+    text-decoration: none;
+    color:rgba(66, 3, 3, 0.938);
+}
+
+.buttons-div{
+    text-align: center;
+}
